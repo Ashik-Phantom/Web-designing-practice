@@ -1,0 +1,130 @@
+
+*{
+padding: 0;
+margin: 0;
+}
+body{
+
+  height: 100vh;
+  background-image: url("images/5.jpg");
+  background-position: center;
+  background-size: cover;
+  /*background-color: #fabe58;*/
+}
+.card{
+    background-color: white;
+    height: 450px;
+    width: 320px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*transform: translate(-50%,-50%);*/
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.4);
+}
+.info{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.name{
+  font-size: 35px;
+  font-family: "Raleway", sans-sans-serif;
+  color: #ff652f;
+  position: absolute;
+  letter-spacing: 2px;
+  font-weight: 600;
+  top: 100px;
+}
+.prof{
+  font-size: 20px;
+  position: absolute;
+  top:140px;
+  font-family: "Work Sans",sans-serif;
+  color: #555555;
+}
+.divider
+{
+  background-color: #949594;
+  height: 1.5px;
+  width: 50px;
+  position: absolute;
+  top:190px;
+}
+.bio{
+  position: absolute;
+  top:220px;
+   color: #949594;
+   font-size: 18px;
+   text-align: center;
+   font-family: "Work Sans",sans-serif;
+   line-height: 18px;
+}
+button{
+    position: absolute;
+    bottom: 30px;
+    background-color: #f79f08;
+    border: none;
+    font-size: 20px;
+    padding: 13px 25px;
+    color: white;
+    font-family: "Work Sans",sans-serif;
+    transition: 0.6s ease;
+}
+button:hover{
+  background-color: white;
+  color: #f79f08;
+  border: 2px solid #f79f08;
+}
+button a:hover{
+  color: #f79f08;
+}
+.photo{
+  height: 100%;
+  width: 100%;
+  background: url("images/my1.jpeg");
+  position: absolute;
+  bottom: 0;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  transition: 1s;
+}
+.card .photo{
+  transform: scale(0.5,0.35) translateY(-650px);
+  background-size: 100% 150%;
+  background-position: 0 -25px;
+  border-radius: 50%;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+}
+ul li{
+  display: grid;
+  background: #f79f08;
+}
+ul li a{
+  color: black;
+  text-decoration: none;
+  padding: 30px 50px;
+  top: 140px;
+/* border: 2px solid #000;*/
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: white;
+  color: black;
+}
+ul li.active a{
+  background-color: white;
+  color: black;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
